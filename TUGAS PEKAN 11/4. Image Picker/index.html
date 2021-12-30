@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+    .container{
+        width: 600px;
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <select onchange="hasil()" id="hewan">
+        <option value="Pilih hewan"></option>
+        <option id="kelinci" value="Kelinci">Kelinci</option>
+        <option id="beruangKutub" value="Beruang Kutub">Beruang Kutub</option>
+        <option id="flamingo" value="Flamingo">Flamingo</option>
+        <option id="pandaMerah" value="Panda Merah">Panda Merah</option>
+        <option id="kuda" value="Kuda">Kuda</option>
+        <option id="rusa" value="Rusa">Rusa</option>
+        <option id="harimau" value="Harimau">Harimau</option>
+        <option id="kura-kura" value="Kura-Kura">Kura-Kura</option>
+        <option id="merak" value="Merak">Merak</option>
+    </select>
+    <div class="container">
+        <div id="gambar"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
