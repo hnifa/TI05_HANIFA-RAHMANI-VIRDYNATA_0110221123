@@ -1,68 +1,54 @@
 function hasil(){
-    var hewan = document.getElementById('hewan').value;
+    //menu select
+    let hewan = document.getElementById('hewan').value;
+    //option
+    let kelinci = document.getElementById("kelinci").value;
+    let kuda = document.getElementById("kuda").value;
+    let merak = document.getElementById("merak").value;
+    let harimau = document.getElementById("harimau").value;
+    let beruangKutub = document.getElementById("beruangKutub").value;
+    let flamingo = document.getElementById("flamingo").value;
+    let rusa = document.getElementById("rusa").value;
+    let pandaMerah = document.getElementById("pandaMerah").value;
+    let kuraKura = document.getElementById("kuraKura").value;
+    //hasil gambar
+    let gambar = document.getElementById('gambar');
 
-    var gambar = '';
-    if(hewan == 'Kelinci'){
+    //logika
+    if(hewan == kelinci){
         alert('Ini gambar kelinci');
-        var myImage = new Image(500, 300);
-        myImage.src = 'img/kelinci.jpg';
-        x = document.getElementById('gambar');
-        x.appendChild(myImage);
+        gambar.src = 'img/kelinci.jpg'; 
     }
-    else if(hewan == 'Beruang Kutub'){
-        alert('Ini gambar beruang kutub');
-        var myImage = new Image(500, 300);
-        myImage.src = 'img/beruang kutub.jpg';
-        x = document.getElementById('gambar');
-        x.appendChild(myImage);
-    }
-    else if(hewan == 'Flamingo'){
-        alert('Ini gambar flamingo');
-        var myImage = new Image(500, 300);
-        myImage.src = 'img/flamingo.jpg';
-        x = document.getElementById('gambar');
-        x.appendChild(myImage);
-    }
-    else if(hewan == 'Panda Merah'){
-        alert('Ini gambar panda merah');
-        var myImage = new Image(500, 300);
-        myImage.src = 'img/panda merah.jpg';
-        x = document.getElementById('gambar');
-        x.appendChild(myImage);
-    }
-    else if(hewan == 'Kuda'){
+    else if(hewan == kuda){
         alert('Ini gambar kuda');
-        var myImage = new Image(500, 300);
-        myImage.src = 'img/kuda.jpg';
-        x = document.getElementById('gambar');
-        x.appendChild(myImage);
+        gambar.src = 'img/kuda.jpg';
     }
-    else if(hewan == 'Rusa'){
-        alert('Ini gambar rusa');
-        var myImage = new Image(500, 300);
-        myImage.src = 'img/rusa.jpg';
-        x = document.getElementById('gambar');
-        x.appendChild(myImage);
+    else if(hewan == beruangKutub){
+        alert('Ini gambar beruang kutub');
+        gambar.src = 'img/beruangKutub.jpg';
     }
-    else if(hewan == 'Harimau'){
+    else if(hewan == flamingo){
+        alert('Ini gambar flamingo');
+        gambar.src = 'img/flamingo.jpg';
+    }
+    else if(hewan == harimau){
         alert('Ini gambar harimau');
-        var myImage = new Image(500, 300);
-        myImage.src = 'img/harimau.jpg';
-        x = document.getElementById('gambar');
-        x.appendChild(myImage);
+        gambar.src = 'img/harimau.jpg';
     }
-    else if(hewan == 'Kura-Kura'){
+    else if(hewan == kuraKura){
         alert('Ini gambar kura-kura');
-        var myImage = new Image(500, 300);
-        myImage.src = 'img/kura-kura.jpg';
-        x = document.getElementById('gambar');
-        x.appendChild(myImage);
+        gambar.src = 'img/kuraKura.jpg';
     }
-    else{
+    else if(hewan == merak){
         alert('Ini gambar merak');
-        var myImage = new Image(500, 300);
-        myImage.src = 'img/merak.jpg';
-        x = document.getElementById('gambar');
-        x.appendChild(myImage);
+        gambar.src = 'img/merak.jpg';
+    }
+    else if(hewan == pandaMerah){
+        alert('Ini gambar panda merah');
+        gambar.src = 'img/pandaMerah.jpg';
+    }
+    else if(hewan == rusa){
+        alert('Ini gambar rusa');
+        gambar.src = 'img/rusa.jpg';
     }
 }
